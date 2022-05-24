@@ -1,0 +1,81 @@
+<html>
+    <head> 
+        <title> CONFIRMATION</title>
+        <link rel="stylesheet" href="STYLE.css">
+    </head>
+    <body>
+
+        <div class="CENTERAL">
+
+        <div class="print-container">
+        <div class="logo">
+            <center><img style="height: 7rem;" src="IMAGES/LOGO HORIZONTAL.png"></center>
+        </div> 
+        <br>
+        
+        <center><div class="formconf">
+            <h1></h1>
+            <table style="width: 100%;border-color:white;" border="10px" align="center" bordercolor="yellow">
+                <tr>
+                    <td>NAME:</td>
+                    <td><span id="name">abc</span></td>
+                </tr>
+                <tr>
+                    <td>PLACE:</td>
+                    <td><span id="place">abc</span> </td>
+                </tr>
+                <tr>
+                    <td>DATE OF ARRIVAL:</td>
+                    <td><span id="arrival"> </span> </td>
+                </tr>
+                <tr>
+                    <td>DATE OF LEAVING:</td>
+                    <td> <span id="leaving"></span></td>
+                </tr>
+                <tr>
+                    <td>TYPE OF TOUR:</td>
+                    <td><span id="tourtype"></span></td>
+                </tr>
+                <tr>
+                    <td>GUESTS: </td>
+                    <td><span id="guests"> </span></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <br><br>
+        <h1> THANK YOU FOR CHOOSING US! </h1>
+        <br><br>
+        <button onclick="document.location='HOME.html'">BACK TO HOME</button>
+
+        <button onclick="window.print();"> PRINT </button>
+         </center>
+
+        </div>
+    
+        </div>
+
+    
+       
+
+        <script defer>
+ 
+            let params = new URLSearchParams(location.search);
+               const place = params.get('place')
+               const arrival = params.get('arrival')
+               const leaving = params.get('leaving')
+               const guests = params.get('guests')
+               const name = params.get('name')
+               const tourtype = params.get('tourtype')
+              
+               
+               document.getElementById("place").innerHTML = place === "" ? "Karnataka" : place;
+               document.getElementById("arrival").innerHTML = arrival === "" ? "03/03/2021" : arrival;
+               document.getElementById("leaving").innerHTML = leaving === "" ? "03/03/2021" : leaving;
+               document.getElementById("guests").innerHTML = guests === "" ? "3" : guests;
+               document.getElementById("name").innerHTML = name === "" ? "xyz" : name;
+               document.getElementById("tourtype").innerHTML = tourtype === "" ? "xyz tour" : tourtype;
+
+        </script>
+    </body>
+</html>

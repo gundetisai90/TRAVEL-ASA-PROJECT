@@ -1,0 +1,486 @@
+,<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <style>
+
+*
+{
+    box-sizing: border-box;
+}
+.menu-bar
+{
+    align-items: center;
+    display: flex;
+    height:12%;
+    text-align: right;
+}
+nav
+{
+    flex:1;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 30px;
+    color: honeydew;
+    z-index: 1;
+    
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    
+
+}
+button{
+ width:160px;
+ background-color:white;
+ color:black;
+ border-radius:10px;
+ border:2px solid transparent;
+ font-size:16px;
+}       
+
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+    
+
+}
+
+.menu-bar a
+{
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    color: white;
+    text-transform: bold;
+    }
+
+    .searchtour{
+       margin:auto;
+       padding: 2rem;
+       height: 50px;
+       background-color: rgb(125, 172, 173);
+       width:100%;
+    }
+    .search{
+        width: 19%;
+        margin: 5px;
+        float: left;
+    }
+    input:hover{
+        background-color: yellow;
+    }
+    select:hover{
+        background-color: yellow;
+    }
+
+    .bookingpackages
+    {
+        padding: 5rem;
+        background-color: powderblue;
+        border-radius: 50%;
+        margin: auto;
+        width: fit-content;
+        
+    }
+
+    .bookingpackages a{
+        color: plum; 
+        font-size: 3.5rem;
+        transition: 0.3s;
+        cursor:pointer;
+    }
+
+    .bookingpackages a:hover{
+        color:rgb(224, 86, 132);
+        transition: 0.3s;
+    
+    }
+    
+    .why{
+        padding: 50px;
+        margin: auto;
+        width: 100%;
+        background-color:white;
+    }
+    .whychooseus{
+        float: left;
+        width: 25%;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+    }
+    .mostpopulartours{
+        background-color: cadetblue;
+        padding: 40px;
+        margin: auto;
+        width: 650px; 
+        height: 340px; 
+        overflow-y:scroll ;
+        border-radius: 10%;
+    }
+    .populartours{
+        background-color: #D3D3D3;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .populartours img{
+    border-radius: 200px;
+    height: 180px;
+    width:220px;
+    padding: 0.8rem 1rem;
+    margin-right: 2rem;  
+    
+    }
+    .dealsanddiscounts{
+        background-color: white;
+    }
+    .discounts{
+        background-color: #D3D3D3;
+        float: none;
+        width: 40%;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        transition: transform 0.5s ease;
+    }
+    .discounts img{
+    border-radius: 200px;
+    height: 190px; width: 250px;
+    padding: 0.8rem 1rem;
+    margin-right: 2rem;
+    }
+
+
+
+    .discounts:hover{
+      transform: translateY(-10px);
+    }
+    .specialdiscount{
+        color:white;
+        height: 200px;
+        width: 960px;
+        margin: auto;
+    }
+    
+
+    .whychooseus i
+    {
+        padding-right:20px;
+        color:palevioletred;
+    }
+    .contact{
+                float: left;
+                width: 19%;
+                padding: 5px;
+                margin: auto;
+                background-color: cornsilk;
+                height: 300px;
+            }
+            ul.contact2::after{
+                color: darkviolet;
+            }
+            ul.contact2{
+                list-style-type: none;
+                margin: 10px;
+                padding: 15px;
+            }
+            .contact a{
+                text-decoration: none;
+                text-decoration-color: black;
+            }
+            
+
+@media (max-width:1000px) {
+    .searchtour{
+        width: 700px;
+        height: auto;
+    }
+    .search{
+        width: 19%;
+        float: none;
+        margin: auto;
+    }
+    .why{
+        width: 700px;
+        height:auto;
+    }
+    .whychooseus{
+        width: 22%;
+        float: none;
+        margin: auto;
+    }
+    .mostpopulartours{
+        width: 700px;
+    }
+    .populartours{
+        width: 700px;
+    }
+    .specialdiscount{
+        width: 700px;
+    
+    }
+    .signup{
+        width: 700px;
+        margin: auto;
+        padding: auto;
+    }
+    .contact{
+        width: 700px;
+        float: none;
+    }
+
+    
+}
+    </style>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("august 5, 2021 15:37:25").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+</head>
+<body>
+    <div class="menu-bar">
+
+        <h2 style="font-size: 60px; text-align: left; padding-left: 2rem;";>P A C K A G E S </h2>
+
+            <nav style=" text-align: right;">
+            <ul>
+                <li><a class="button" href="HOME.html"><button style=" background-color: transparent;color: cadetblue;"><i class="fas fa-home"></i> HOME</button></a></li>
+                <li><a class="button" href="Destinations.html"><button style=" background-color: transparent;color: cadetblue;"><i class="fas fa-map-marked"></i>DESTINATIONS</button></a></li>
+                <li><a class="button" href="about.html"><button style=" background-color: transparent;color: cadetblue;"><i class="fas fa-id-badge"></i>ABOUT</button></a></li>
+                <li><a class="button" href="contact.html"><button style="background-color: transparent;color: cadetblue;"><i class="fas fa-phone-alt"></i> CONTACT </button></a></li>
+            </ul>
+            </nav>
+    </div>
+   <br> <br>
+   
+   <div class="bookingpackages" style="text-align: center;">
+
+    <h1 style="color: rgb(90, 63, 90);"> FIND OUR OFFERS APPEALING? </h1>
+    <a href="BOOK.html"> BOOK TICKETS NOW! </a> </li>
+   </div>
+
+    <br>
+    <div class="why">
+        <center><h1><b> WHY CHOOSE US?</b></h1></center>
+        <div class="whychooseus">
+            <i class="fa fa-map" style="font-size: 50px;"></i>
+            <br>
+        <center><h2><b> Diverse Destination</b></h2></center>
+        There's something about arriving in new cities,wandering empty streets with no destination. I will neverlose the love for the arriving.
+        </div>
+        <div class="whychooseus">
+            <i class="fa fa-money" style="font-size: 50px;"></i>
+        <center><h2><b> Value for Money</b></h2></center>
+        Traditionally VfM was thought of as getting the right quality, in the right quantity, at the right time, from the right supplier at the right price.
+        </div>
+        <div class="whychooseus">
+            <i class="fa fa-image" style="font-size: 50px;"></i>
+       
+         
+        <center><h2><b> Beautiful Places</b></h2></center>
+        There are so many amazing places around the globe to see, we couldn't possibly include them all in just one list.There are so many amazings places.
+        </div>
+        <div class="whychooseus">
+            <i class="fa fa-road" style="font-size: 50px;"></i>
+        <center><h2><b>Passionate Travel</b></h2></center>
+        Travelling has not only been something that I do, but it has been something that has become a part of me. I have this passion of travel.
+        </div>
+    </div>
+    
+
+
+    <div class="mostpopulartours" style="padding-bottom: 5rem;" >
+        <center style="color: white;"><p>Take a Look at Our</p></center>
+        <center style="color: white;"><h1>MOST POPULAR TOURS</h1></center>
+        <div class="populartours">
+            <img src="https://th.bing.com/th/id/OIP.Dm6Inw6HbK59zkz8j_KhLwHaFj?w=237&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <h2>KANYAKUMARI TEMPLE</h2>
+                <P>PRICE=5000 RUPEES</P>
+                <p>TOUR DURATION=WEEK</p>
+            </div>
+        </div>
+        <div class="populartours">
+            <img src="https://th.bing.com/th/id/OIP.ZSgtlKAFObpw2jTQY_RNRwHaJ4?w=115&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <h2>CHARMINAR</h2>
+                <P>PRICE=2000 RUPEES</P>
+                <p>TOUR DURATION=WEEK</p>
+            </div>
+        </div>
+        <div class="populartours">
+            <img src="https://th.bing.com/th/id/OIP.2q1YghA30hGtYQYRsRAQuAHaEK?w=265&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <h2>HAMPI</h2>
+                <P>PRICE=3000 RUPEES</P>
+                <p>TOUR DURATION=WEEK</p>
+            </div>
+        </div>
+        <div class="populartours">
+            <img src="IMAGES/buildings-Harmandir-Sahib-side-tank-Amritsar-Punjab.jpg">
+            <div>
+                <h2>AMRITSAR</h2>
+                <P>PRICE=2500 RUPEES</P>
+                <p>TOUR DURATION=WEEK</p>
+            </div>
+        </div>
+        <div class="populartours">
+            <img src="https://th.bing.com/th/id/OIP.JDVGLHyBtx_BUXgfyh3azQHaE8?w=242&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <h2>GOA BEACH</h2>
+                <P>PRICE=1500 RUPEES</P>
+                <p>TOUR DURATION=WEEK</p>
+            </div>
+        </div>
+    </div>
+
+<br> <br>
+    <div class="dealsanddiscounts">
+        <center><h1><b> DEALS AND DISCOUNTS</b></h1></center>
+        <center><div class="discounts" style="background-image: url(IMAGES/7..post-card-news.jpg); background-repeat: no-repeat; background-size: cover;">
+            <img src="IMAGES/meenakshi-sundareswarar-temple.jpg" style="height: 180px; widht: 150px">
+             <div> 
+                <h2>DISCOVER TAMILNADU</h2>
+                <p>7 DAYS 6 NIGHTS</p>
+                <p>DISCOUNT=20%</p>
+            </div>
+        </center>
+        <center><div class="discounts" style="background-image: Url(IMAGES/78427300.jpg); background-repeat: no-repeat; background-size:cover; ">
+            <img src="https://th.bing.com/th/id/OIP.elywnWnL7C_JBnhIr_ioGAHaFj?w=239&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <h2> DISCOVER MAHARASHTRA</h2>
+                <p> 6 DAYS 5NIGHTS</p>
+                <p>DISCOUNT=15%</p>
+            </div>
+        </div></center>
+        <center><div class="discounts" style="background-image: url(IMAGES/banner16102735624.jpg); background-size: cover; background-repeat: no-repeat;">
+            <img src="https://th.bing.com/th/id/OIP.2q1YghA30hGtYQYRsRAQuAHaEK?w=265&h=180&c=7&o=5&pid=1.7">
+            <div>
+                <center>
+                    <h2> DISCOVER KARNATAKA</h2>
+                <p> 6DAYS 5 NIGHTS</p>
+                <p>DISCOUNT=15%</p>
+                </center>
+            </div>
+            
+        </div></center>
+    </div>
+    
+    <br> <br>
+    <div class="specialdiscount">
+       <center><h1 style="color: cadetblue;"> Special Tour in September, Discover TAMIL NADU for 100 lucky couples with <span style="color: rgb(62, 107, 109);"> DISCOUNT 50%</span>  </h1></center> 
+       <p id="demo" style="text-align: center; font-size: 60px; margin-top: 5px; background-color:palevioletred;"></p>
+    </div>
+    <br> <br> <br>
+
+    <div class="footer">
+        <div class="container2">
+            <div class="row1">
+                <div class="footer-col" >
+                    <h4>BOOK NOW</h4>
+                    <ul>
+                        <li> <a href="#"> BUSES </a></li>
+                        <li> <a href="#"> HOTELS</a></li>
+                        <li> <a href="#"> TOUR</a></li>
+                        <li> <a href="#"> BEACHES AND RESORTS</a></li>
+                        <li> <a href="#"> CRUISES</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"  >
+                    <h4>TOP DEALS</h4>
+                    <ul>
+                        <li> <a href="karnataka.html"> KARNATAKA</a></li>
+                        <li> <a href="maharastra.html"> MUMBAI</a></li>
+                        <li> <a href="delhi.html"> DELHI</a></li>
+                        <li> <a href="kerala.html"> KERALA</a></li>
+                        <li> <a href="tamilnadu.html"> CHENNAI</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col"  >
+                    <h4>BLOG POST</h4>
+                    <ul>
+                        <li> <a href="#"> The Ultimate Packing List For Female Travelers </a></li>
+                        <li> <a href="#"> How These 5 People Found The Path to Their Dream Trip</a></li>
+                        <li> <a href="#"> A Definitive Guide to the Best Dining and Drinking Venues in the City</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                        <a href="#"> <i class="fab fa-instagram"></i> </a>
+                        <a href="#"> <i class="fab fa-twitter"></i> </a>
+                        <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                    </div>    
+
+                    <br>
+
+                    <div class="signup">
+                        <h4>Sign Up for a Newsletter</h4>
+                        <p>Sign up for our mailing list to get latest updates and offers.</p>
+                        <div class="subscribe">
+                            <br>
+                            <form name="myform" onsubmit="return validation()">
+                                <table>
+                                    <tr>
+                                        <td><input type="text" class="form-control" id="email" name="email" placeholder="Enter your email"></td>
+                                        <td><input type="submit" value="SUBSCRIBE"></td>
+                                    </tr>
+                                </table>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+				
+</body>
+</html>
